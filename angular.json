@@ -13,10 +13,22 @@
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
+      "i18n": {
+        "sourceLocale": "aa-AA",
+        "locales": {
+          "en-US": {
+            "translation": "src/locales/en-US.json"
+          },
+          "es-AR": {
+            "translation": "src/locales/es-AR.json"
+          }
+        }
+      },
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "localize": true,
             "outputPath": "dist/i18n-angular-demo",
             "index": "src/index.html",
             "main": "src/main.ts",
